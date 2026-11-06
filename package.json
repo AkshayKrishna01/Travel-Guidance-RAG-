@@ -1,0 +1,28 @@
+{
+  "name": "x-clone",
+  "version": "1.0.0",
+  "main": "backend/server.js",
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon backend/server.js",
+    "start": "npm run build --prefix frontend && cross-env NODE_ENV=production node backend/server.js",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AkshayKrishna01/X-Clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AkshayKrishna01/X-Clone/issues"
+  },
+  "homepage": "https://github.com/AkshayKrishna01/X-Clone#readme",
+  "description": "",
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  },
+  "dependencies": {
+    "cors": "^2.8.5"
+  }
+}
