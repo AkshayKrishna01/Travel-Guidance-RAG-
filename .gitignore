@@ -1,0 +1,11 @@
+﻿__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+Include/
+Lib/
+Scripts/
+pyvenv.cfg
+.venv/
+venv/
